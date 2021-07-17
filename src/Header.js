@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div>
-            <header>
+        <div id="home" className="top-picture">
+                <header>
             <div className="container">
                 <div className="masthead-subheading">Welcome To Our Studio!</div>
                 <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
