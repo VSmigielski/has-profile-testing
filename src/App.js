@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <div>
       <NavBar/>
-      <div className="top-picture">
-        <Header className="top-picture"/>
+      <div id="home" className="top-picture">
+        <Header/>
       </div>
       <Scrollspy items={ ['home', 'section-1', 'section-2', 'section-3'] } currentClassName="is-current">
         <a href="#section-1"><About/></a>

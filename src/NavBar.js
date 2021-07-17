@@ -14,7 +14,7 @@ export const NavBar = () => {
         <div>
   <Navbar collapseOnSelect className={scroll ? "bg-dark" : "bg-transparent"} expand="lg" variant="dark" id="custom-nav">
   <Container>
-  <Navbar.Brand id="navbar-brand" href="#home">HÀ NGUYỄN</Navbar.Brand>
+  <Navbar.Brand href="#home">HÀ NGUYỄN</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
