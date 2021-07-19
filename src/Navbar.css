@@ -48,11 +48,12 @@ body {
 
 .nav-link {
     font-size: 20px;
+    color: red!important;
 }
 
 .social-links {
     margin: 9px 7px;
-    color: white;
+    color: white!important;
     background: rgb(26,35,126);
     padding: 4px 8px;
     font-size: 12px;

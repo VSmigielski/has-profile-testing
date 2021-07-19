@@ -12,7 +12,7 @@ export const NavBar = () => {
 
     return (
         <div>
-  <Navbar collapseOnSelect className={scroll ? "bg-dark" : "bg-transparent"} expand="lg" variant="dark" id="custom-nav">
+  <Navbar collapseOnSelect className={scroll ? "bg-dark" : "bg-transparent"} expand="lg" id="custom-nav">
   <Container>
   <Navbar.Brand href="#home">HÀ NGUYỄN</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -28,7 +28,7 @@ export const NavBar = () => {
           <Nav.Link href="#portfolio">Portfolio</Nav.Link>
         </section>
         <section id="section-3">
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="#contact" style={{color: 'red!important'}}>Contact</Nav.Link>
         </section>
         <section>
           <Nav.Link className="social-links" href="https://github.com/VSmigielski" target="_blank" title="GitHub Profile" rel="noreferrer">
@@ -40,7 +40,11 @@ export const NavBar = () => {
           <i className="fab fa-linkedin-in"></i>
           </Nav.Link>
         </section>
-      
+        <section>
+          <Nav.Link className="social-links" href="" target="_blank" title="Resume" rel="noreferrer">
+          <i className="far fa-id-badge"></i>
+          </Nav.Link>
+        </section>
       
       </div>
     </Nav>
