@@ -1,13 +1,20 @@
 import React, {useState} from 'react'
-import {Col, Row} from 'react-bootstrap'
+import {Container, Col, Row, Modal, Button} from 'react-bootstrap'
 import data from './data'
+import {ImCross} from 'react-icons/im'
 
 const PortfolioItems = ({project}) => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
+        <>
             <Col sm={6} lg={4} className="mb-4">
                 {/* <!-- Portfolio item--> */}
                 <div className="portfolio-item">
-                    <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                    <a className="portfolio-link" onClick={handleShow}>
                 <div className="portfolio-hover">
                 <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                 </div>
@@ -19,6 +26,63 @@ const PortfolioItems = ({project}) => {
                 </div>
                 </div>
             </Col>
+            
+      <Modal class="portfolio-item" size="xl" show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title className="text-center">
+              <span className="modal-heading-area">
+                  {project.title} <br/>
+              </span>
+          <span className="modal-subheading-area">Lorem ipsum dolor sit amet consectetur</span>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <Container>
+                <Row>
+                    <Col sm={0} md={2} lg={3}></Col>
+                    <Col sm={12} md={8} lg={6}>
+                    <img className="portfolio-image img-fluid" src={project.image} alt={project.title} />
+                    </Col>
+                    <Col sm={0} md={2} lg={3}></Col>
+                </Row>
+                <Row>
+                    <Col xs={1} lg={2}></Col>
+                    <Col xs={12} lg={8} className="text-center mt-2">
+                        {project.description}
+                    </Col>
+                    <Col xs={1} lg={2}></Col>
+                </Row>
+                <Row>
+                    <Col xs={1} lg={2}></Col>
+                    <Col xs={12} lg={8} className="text-center mt-2">
+                        {project.title}
+                    </Col>
+                    <Col xs={1} lg={2}></Col>
+                </Row>
+                <Row>
+                    <Col xs={1} lg={2}></Col>
+                    <Col xs={12} lg={8} className="text-center mt-2">
+                        {project.title}
+                    </Col>
+                    <Col xs={1} lg={2}></Col>
+                </Row>
+                <Row>
+                    <Col xs={5}>
+                    </Col>
+                    <Col xs={2}>
+                    <Button variant="primary" onClick={handleClose} className="modal-btn">
+                        <span className="modal-close-button">
+                        <ImCross className="mb-1 me-2"/> Close
+                        </span>
+                    </Button>
+                    </Col>
+                    <Col xs={5}>
+                    </Col>
+                </Row>
+            </Container>
+        </Modal.Body>
+      </Modal>
+        </>
     )
 }
 

@@ -28,7 +28,7 @@ export const NavBar = () => {
           <Nav.Link href="#portfolio">Portfolio</Nav.Link>
         </section>
         <section id="section-3">
-          <Nav.Link href="#contact" style={{color: 'red!important'}}>Contact</Nav.Link>
+          <Nav.Link href="#contact">Contact</Nav.Link>
         </section>
         <section>
           <Nav.Link className="social-links" href="https://github.com/VSmigielski" target="_blank" title="GitHub Profile" rel="noreferrer">

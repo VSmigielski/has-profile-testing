@@ -6,7 +6,7 @@ const data = [
         'images/travel-new-font-1.png',
         description:
         'This project was written in basic HTML and CSS. However, it was the first big project made in the SheCodes Workshop set. This was a great first project that used everything we learned in HTML and CSS from the beginning.',
-        classRow: 'row mb-5',
+        link: '#portfolioModal1',
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const data = [
         'images/weather-vanilla.png',
         description:
         'This project was programmed initially with HTML, CSS and Vanilla JavaScript in the second SheCodes workshop. In the third SheCodes workshop, we upgraded the project to utilize React.js instead of regular JavaScript. I showcase both versions in the "Work" tab.',
-        classRow: 'row mb-5 flex-row-reverse',
+        link: '#portfolioModal2',
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const data = [
         'images/dictionary-2.png',
         description:
         'This project was written using React as well as combining two external APIs. It was a fun project to work on since it gave a bit of extra knowledge with how to work within components (components inside components using props).',
-        classRow: 'row mb-5',
+        link: '#portfolioModal3',
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const data = [
         'images/czech-k-9.png',
         description:
         'This project was written using HTML, CSS, and JS. This was a project for a client that wanted to transform his website into either wordpress or a site written that was responsive. The goal was to transfer his website from a simple Wix website into something that was modern with proper English and had SEO handled.',
-        classRow: 'row mb-5 flex-row-reverse',
+        link: '#portfolioModal4',
     },
   ];
   

@@ -12,6 +12,14 @@ div.top-picture {
     width: 100vw;
 }
 
+.picture-of-me {
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  height: 300px;
+  width: auto;
+}
+
 .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
@@ -207,6 +215,30 @@ div.top-picture {
   .timeline .timeline-body > p {
     margin-bottom: 0;
   }
-  
 
-  
+  .portfolio-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .modal-title {
+    width: 100%;
+  }
+
+  .modal-heading-area {
+    font-size: 36px;
+  }
+
+  .modal-subheading-area {
+    font-weight: normal;
+  }
+
+  .modal-btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .modal-close-button {
+    font-size: 20px;
+  }

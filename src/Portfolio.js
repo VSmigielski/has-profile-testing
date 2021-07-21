@@ -1,6 +1,7 @@
 import React from 'react'
 import PortfolioItem from './PortfolioItem';
 import {Container, Col} from 'react-bootstrap'
+import PortfolioModalPopup from './PortfolioModalPopup';
 
 const Portfolio = () => {
     return (
@@ -15,6 +16,7 @@ const Portfolio = () => {
                     <PortfolioItem />
                 </Col>
             </Container>
+            <PortfolioModalPopup/>
         </section>
         </div>
     )

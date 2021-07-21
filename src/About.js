@@ -1,36 +1,32 @@
-import React, {useState} from 'react'
-import dataTimeline from './datatimeline'
-import TimelineItems from './TimelineItems';
+import React from 'react'
+import { Container, Col, Row } from 'react-bootstrap'
 
 const About = () => {
-    const [data] = useState(dataTimeline);
     return (
         <div>
-            <section className="page-section" id="about">
-            <div className="container mb-5">
-                <div className="text-center">
-                    <h2 className="section-heading text-uppercase">About</h2>
-                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <section class="page-section" id="about">
+            <Container>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted mb-3">Ha Nguyen</h3>
                 </div>
-                <ul className="timeline">
-                {
-                data.map((project)=> {
-                    return <TimelineItems key={project.id} {...project}/>;
-                })
-            }
-                    <li className="timeline-inverted">
-                        <div className="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                <Row class="text-center">
+                    <Col>
+                        <img className="picture-of-me" src="https://media-exp1.licdn.com/dms/image/C4E03AQHmrpvckS15iw/profile-displayphoto-shrink_400_400/0/1587604769212?e=1632355200&v=beta&t=zpNXVwEktOTGAQIJjPHJV8z869ITYAVv0HChbpM2xtE" alt=""/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={1} lg={2}>
+                    </Col>
+                    <Col sm={12} md={10} lg={8}> 
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </Col>
+                    <Col md={1} lg={2}>
+                    </Col>
+                </Row>
+                    
+            </Container>
         </section>
         </div>
     )
