@@ -14,7 +14,7 @@ const PortfolioItems = ({project}) => {
             <Col sm={6} lg={4} className="mb-4">
                 {/* <!-- Portfolio item--> */}
                 <div className="portfolio-item">
-                    <a className="portfolio-link" onClick={handleShow}>
+                    <a className="portfolio-link" href="#" onClick={handleShow}>
                 <div className="portfolio-hover">
                 <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                 </div>
@@ -67,16 +67,16 @@ const PortfolioItems = ({project}) => {
                     <Col xs={1} lg={2}></Col>
                 </Row>
                 <Row>
-                    <Col xs={5}>
+                    <Col xs={4}>
                     </Col>
-                    <Col xs={2}>
+                    <Col xs={4}>
                     <Button variant="primary" onClick={handleClose} className="modal-btn">
                         <span className="modal-close-button">
                         <ImCross className="mb-1 me-2"/> Close
                         </span>
                     </Button>
                     </Col>
-                    <Col xs={5}>
+                    <Col xs={4}>
                     </Col>
                 </Row>
             </Container>

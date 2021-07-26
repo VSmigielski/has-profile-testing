@@ -23,8 +23,8 @@ body {
     font-size: 32px;
 }
 
-.bg-transparent {
-    background-color: transparent;
+.bg-clear {
+    background-color: transparent !important; 
     position: fixed;
     top: 0;
     width: 100%;
@@ -33,7 +33,6 @@ body {
 
 .bg-dark {
     z-index: 1000;
-    background-color: #F3F3F3;
     position: fixed;
     top: 0;
     width: 100%;
@@ -52,16 +51,40 @@ body {
 }
 
 .social-links {
-    margin: 9px 7px;
     color: white!important;
-    background: rgb(26,35,126);
-    padding: 4px 8px;
-    font-size: 12px;
-    border-radius: 50%;
-    transition: all 100ms ease-in-out;
+    font-size: 20px;
 }
 
-.social-links:hover {
-    color: white;
+.social-circles {
+    background: rgb(26,35,126);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    transition: all 100ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-circles:hover {
     background: var(--branding-color);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: none;
+}
+
+.ham {
+    color: blue;
+}
+
+.navbar-light .navbar-toggler {
+    color: blue;
+    border-color: blue;
+}
+
+@media screen and (max-width: 992px) {
+    .bg-clear {
+        background-color: purple!important;
+    }
 }
