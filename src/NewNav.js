@@ -52,7 +52,7 @@ const Navbar = () => {
             return (
               <li key={id}>
                 <div className="circles-social">
-                    <a href={url}>{icon}</a>
+                    <a href={url} >{icon}</a>
                 </div>
               </li>
             );

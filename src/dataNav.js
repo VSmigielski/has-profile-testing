@@ -23,6 +23,7 @@ export const social = [
     id: 1,
     url: 'https://www.facebook.com',
     icon: <FaGithub />,
+    title: "Github Profile",
   },
   {
     id: 2,
